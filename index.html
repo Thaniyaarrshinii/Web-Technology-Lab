@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>World Of Air Travel</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+	function start()
+	{
+		window.alert("Welcome to WOAT!!!");
+	}
+	window.addEventListener("load",start,false);
+
+	function start1()
+	{
+		document.getElementById("move").addEventListener("mousemove", moveone, false );
+		document.getElementById("move").addEventListener("mouseout", leaveone, false );
+	}
+	
+	function moveone()
+	{
+		document.getElementById("move").innerHTML ="Woat - the best Airlink available";
+	}
+
+	function leaveone()
+	{
+		document.getElementById("move").innerHTML ="Exclusively for Domestic Travel in India";
+	}
+	window.addEventListener( "load", start1, false );
+
+	function bigImg(x) 
+	{
+		x.style.height = "250px";
+		x.style.width = "300px";
+	}		
+
+	function normalImg(x) 
+	{
+		x.style.height = "190px";
+	  	x.style.width = "280px";
+	}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("h1,h2,h3").click(function(){  
+        $(this).hide();  
+    });  
+});  
+</script>
+
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script>    
+$(document).ready(function(){    
+    $("#move").mouseenter(function(){    
+       $( "div" ).text( "Mouse entered on ABOUT" ).show().fadeOut( 2000 );  
+    });    
+});    
+</script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+      $("#move").mouseenter(function(){
+         $("#move").css("color", "#562932");
+      });
+      $("#move").mouseleave(function(){
+         $("#move").css("color", "black");
+      });
+   });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p.lead,p.hist").mouseenter(function(){
+    $("p.lead,p.hist").css("background-color", "#CDCDCD");
+  });
+  $("p.lead,p.hist").mouseleave(function(){
+    $("p.lead,p.hist").css("background-color", "#E5E4E2");
+  });
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    alert("The paragraph was double-clicked.");
+  });
+});
+</script>
+
+  <link href="style.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
+			<!--<a class="navbar-brand" href="#"><img src="istockphoto-1160804325-612x612_preview_rev_1.png"></a>-->
+
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-main">
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li><a href="#home">Home</a></li>
+				<li><a href="#aboutus">About</a></li>
+				<li><a href="#ourhistory">Our History</a></li>
+				<li><a href="#air">Airlines</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#en">Explore</a></li>
+				<li><a href="#bn">Book Now</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Follow</a></li>
+
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</nav>
+
+<div id="home">
+	<div class="landing-text">
+		
+
+
+		<h1><img src="a1.png" align="left" height="100"/><img src="a2.png" align="left" height="100"/>WORLD OF AIR TRAVEL<img src="a2.png" align="right" height="100"/><img src="a1.png" align="right" height="100"/></h1><br>
+
+
+
+
+
+
+		<!-- moveone() and leaveone() -->
+		<h3><p id ="move">Exclusively for Domestic Travel in India</p></h3>
+
+		<!--<a href="#" class="btn btn-default btn-lg">Get Started</a>-->
+		
+	</div>
+
+</div>
+
+
+<div id="aboutus">
+<div class="padding">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-2">
+			<!--<center><img src="about.jpg"></center>-->
+		</div>
+		<div class="col-sm-8" align="justify">
+			<h2 id="abt" class="ABT_"><span><ins><center>ABOUT US</center></ins></span></h2><br>
+			<p class="lead">World of Air Travel is India’s leading online air travel booking brand providing range of choice for flights for travellers. Nurtured from the seed of a single great idea to empower the air traveller we are a pioneer in India’s online air travel industry.Our core value differentiator is the most trusted user experience, be it in terms of quickest search and booking, fastest payments, settlement or refund processes. We are the number one choice for new India on the move.Our position in the market as a brand recognised for its reliability and transparency.We offer travellers the convenience of booking travel online with a few clicks.</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		
+	</div>
+</div>
+</div>
+</div>
+
+<div id="fixed">
+</div>
+
+<div id="ourhistory">
+<div class="padding">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-2">
+			<!--<center><img src="about.jpg"></center>-->
+		</div>
+		<div class="col-sm-8" align="justify">
+			<h2 id="abt" class="ABT_"><span><ins><center>OUR HISTORY</center></ins></span></h2><br>
+			<p class="hist">Founded in the year 2020 we came to life to empower the Indian air traveller with instant bookings and comprehensive choices. The company initiated its journey serving India travel market offering a range of best-value services powered by technology and round-the-clock customer support. With more and more Indians initiating to transact online with new opportunities with the advent of low-cost flights. Our rise has been led by the vision and the spirit of each one of its employees, for whom no idea was too big and no problem too difficult. With untiring determination, we have proactively diversified our offering, adding a variety of online services. We have stayed ahead of the curve by continually evolving its technology to meet the ever-changing demands of the rapidly developing global air travel market, steadily establishing itself as India’s leading online air travel company.</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		
+	</div>
+</div>
+</div>
+</div>
+
+
+<!--<div class="padding">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<h2 id="abt" class="ABT_"><span><ins><center>OUR HISTORY</center></ins></span></h2><br>
+			<p class="hist">Founded in the year 2020 we came to life to empower the Indian air traveller with instant bookings and comprehensive choices. The company initiated its journey serving India travel market offering a range of best-value services powered by technology and round-the-clock customer support. With more and more Indians initiating to transact online with new opportunities with the advent of low-cost flights. Our rise has been led by the vision and the spirit of each one of its employees, for whom no idea was too big and no problem too difficult. With untiring determination, we have proactively diversified our offering, adding a variety of online services. We have stayed ahead of the curve by continually evolving its technology to meet the ever-changing demands of the rapidly developing global air travel market, steadily establishing itself as India’s leading online air travel company.</p>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="sass.png" class="img-responsive">
+		</div>
+		<div class="table-responsive col-sm-6">
+			<h2 id="abt" class="ABT_"><span><ins><center>AIRLINES</center></ins></span></h2><br>
+			<table border="2" class="table table-bordered table-dark">
+			<tbody>
+				<tr><td>Air India</td></tr>
+				<tr><td>SpiceJet</td></tr>
+				<tr><td>GoAir</td></tr>
+				<tr><td>Indigo</td></tr>
+				<tr><td>AirAsia India</td></tr>
+			</tbody>
+			</table>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="less.png" class="img-responsive">
+		</div>
+
+	</div>
+</div>
+</div>-->
+
+
+<div id="trans2">
+</div>
+
+
+<div id="air">
+	<div class="padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<!--<center><img src="about.jpg"></center>-->
+			</div>
+			<div class="col-sm-8" align="justify">
+				<h2 id="abt" class="ABT_"><span><ins><center>AIRLINES</center></ins></span></h2><br>
+				<div class="table-responsive">	
+					<table border="2">
+						<tbody>
+							<tr>
+								<td>Air India</td>
+							</tr>
+							<tr>
+								<td>Vistara</td>
+							</tr>
+							<tr>
+								<td>AirIndia Express</td>
+							</tr>
+							<tr>
+								<td>SpiceJet</td>
+							</tr>
+							<tr>
+								<td>GoAir</td>
+							</tr>
+							<tr>
+								<td>Indigo</td>
+							</tr>
+							<tr>
+								<td>AirAsia India</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+			</div>
+			<div class="col-sm-2">
+			</div>
+			
+		</div>
+	</div>
+	</div>
+	</div>
+
+<div id="trans">
+</div>
+
+<div id="gallery">
+<h2 id="gal"class="GAL_"><span><ins><center>GALLERY<center></ins></span></h2>
+<center>
+<a href="http://www.airindia.in" target="_blank"><img src="f1.png"/></a>
+<a href="https://www.airvistara.com/in/en" target="_blank"><img src="f2.png"/></a>
+<a href="https://www.airindiaexpress.in/en" target="_blank"><img src="f3.png"/></a>
+<a href="https://www.spicejet.com" target="_blank"><img src="f4.png"/></a>
+<a href="https://www.goair.in/" target="_blank"><img src="f5.png"/></a>
+<a href="https://www.goindigo.in/" target="_blank"><img src="f6.png"/></a>
+<a href="https://www.airasia.co.in/content/air-asia/en/home" target="_blank"><img src="f7.png"/></a>
+</center>
+</div>
+
+
+<div id="trans1">
+</div>
+
+<div id="bn">
+<div class="padding">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-3">
+			<h2 id="en" class="ABT_"><span><ins><center>EXPLORE</center></ins></span></h2><br>
+
+<!--mouse events mouseover - image size decreases & mouse out - image size increases-->
+
+			<a href="explore.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="en.png"/></a>
+
+			<!--<script>
+				function bigImg(x) {
+				  x.style.height = "100px";
+				  x.style.width = "100px";
+				}
+				
+				function normalImg(x) {
+				  x.style.height = "170px";
+				  x.style.width = "250px";
+				}
+				</script>-->
+		</div>
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-3">
+
+			<h2 id="bn" class="ABT_"><span><ins><center>BOOK NOW</center></ins></span></h2><br>
+			<a href="f1.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="bn.png" /></a>
+
+			<!--<script>
+				function bigImg(x) {
+				  x.style.height = "100px";
+				  x.style.width = "100px";
+				}
+				
+				function normalImg(x) {
+				  x.style.height = "170px";
+				  x.style.width = "250px";
+				}
+				</script>-->
+<!--mouse events mouseover and mouseout ends-->
+
+		</div>
+		<div class="col-sm-2">
+		</div>
+		
+	</div>
+</div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+	<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-3">
+			<h2>CONTACT US</h3><br>
+			<h4>PHONE</h4>
+			<h5>0424 2224224</h5>
+
+			<h4>MOBILE</h4>
+			<h5>+91 9360194224</h5>
+
+			<h4>TOLL FREE</h4>
+			<h5>1800-224-0224</h5>
+
+			<h4>MAIL</h4>
+			<h5>worldofairtravel@gmail.com</h5>
+		</div>
+		<div class="col-sm-2">
+			<br><br>
+			<img src="aaa-removebg-preview.png" class="icon">
+		</div>
+		<div class="col-sm-3">
+			<h2>CONNECT</h3><br>
+			<a href="#" class="fa fa-facebook"></a><br>
+			<a href="#" class="fa fa-instagram"></a><br>
+			<a href="#" class="fa fa-twitter"></a><br>
+			<a href="#" class="fa fa-youtube"></a><br>
+			<a href="#" class="fa fa-google"></a><br>
+			<a href="#" class="fa fa-linkedin"></a><br>
+		</div>
+		<div class="col-sm-2">
+		</div>
+	</div>
+	<div class="footer__copyright">
+            <small><center><h3 class="c"><span>&copy Copyright <b>WOAT</b> All Rights Reserved. Designed by WOAT</span></h3></center></small>
+        </div>
+	
+
+</footer>
+
+
+
+
+<!--<footer>
+        <div class="footer__socials">
+            <a href="https://www.facebook.com/konguengineeringcollegeperundurai" target="_blank"><i
+                    class="uil uil-facebook"></i></a>
+            <a href="https://www.instagram.com/konguengineeringcollege" target="_blank"><i
+                    class="uil uil-instagram"></i></a>
+            <a href="https://twitter.com/KonguOfficial" target="_blank"><i class="uil uil-twitter"></i></a>
+            <a href="https://www.youtube.com/c/konguengineeringcollege" target="_blank"><i
+                    class="uil uil-youtube"></i></a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Academic</a></li>
+                    <li><a href="">Placement</a></li>
+                    <li><a href="">Achievement</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">Popular</a></li>
+                    <li><a href="">Top Viewed</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Info</h4>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Location</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; 2023 KEC Bloggers</small>
+        </div>
+    </footer>-->
+
+
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>World Of Air Travel</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="f1.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+    <script>
+        function validateform() 
+	  {
+            var user = document.myform.user.value;
+            var email = document.myform.email.value;
+            var pwd = document.myform.pass.value;
+            var pwd1 = document.myform.password1.value;
+            var ph = document.myform.phone.value;
+            var gender = document.myform.gen.value;
+            var radio = document.myform.radio.value;
+            let checkbox = document.getElementById("check");
+
+            if (user == null || user == "") {
+                alert("enter username");
+                return false;
+            }
+            if (user.length != "") {
+                var regex = /(?=.{6,})/;
+                if (regex.test(user) === false) {
+                    alert("Username must contain more than 5 characters");
+                    return false;
+                }
+            }
+            if (email == null || email == "") {
+                alert("Please enter your Email!!");
+                return false;
+            }
+            if (email.length != "") {
+                var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (regex.test(email) === false) {
+                    alert("Enter a valid Email!!");
+                    return false;
+                }
+            }
+            if (pwd == null || pwd == "") {
+                alert("Please enter Password!!");
+                return false;
+            }
+            if (pwd.length != "") {
+                var regex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+                if (regex.test(pwd) === false) {
+                    alert("Enter a valid password with special symbols and more than 8 characters!!");
+                    return false;
+                }
+            }
+            if (pwd != pwd1) {
+                alert("password mismatch");
+                return false;
+            }
+            if (ph == null || ph == "") {
+                alert("enter mobile number");
+                return false;
+            }
+
+            if (ph.length != '') {
+                var regex = /^(\d{3})[- ]?(\d{3})[- ]?(\d{4})$/;
+
+                if (regex.test(ph) === false) {
+                    alert("Enter a Valid Mobile no.!!!\nMobile number should contain only numeric digits");
+                    return false;
+                }
+            }
+            if (gender == null || gender == "") {
+                alert("Select any place");
+                return false;
+            }
+            if (radio == null || radio == "") {
+                alert("Select your class!!");
+                return false;
+            }
+            if (check.checked) {
+            }
+            else {
+                alert("Agree to terms and conditions!!");
+                return false;
+            }
+        }
+    </script>
+	<script type="text/javascript">
+		document.getElementById("myButton").onclick = function () {
+			location.href = "index.html";
+		};
+	</script>
+
+</head>
+
+<body>
+
+<div id="home">
+	<div class="landing-text">
+		<h1><img src="a1.png" align="left" height="100"/><img src="a2.png" align="left" height="100"/>WORLD OF AIR TRAVEL<img src="a2.png" align="right" height="100"/><img src="a1.png" align="right" height="100"/></h1><br>
+		<h3>Exclusively for Domestic Travel in India</h3>		
+	</div>
+</div>
+
+
+<div id="fixed">
+</div>
+
+<div id="form">
+<div class="padding">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-7">
+			<h2 id="abt" class="ABT_"><span><ins><center>BOOK NOW</center></ins></span></h2><br><br>
+				<form action="order confirm.html" name="myform" onsubmit="return validateform()">
+            		<center>
+
+				<table>
+				<tr>
+
+                			<td><label>Name :</label></td>
+                			<td><input type="text" name="user" id="username"><br><br></td>
+				</tr>
+				
+				<tr>
+					<td><label>Email :</label></td>
+                			<td><input type="text" name="email" id="email"><br><br></td>
+				</tr>
+
+				<tr>
+                			<td><label>Password :</label></td>
+                			<td><input type="password" id="password" name="pass"><br><br></td>
+				</tr>
+
+				<tr>
+                			<td><label>Confirm Password :</label></td>
+                			<td><input type="password" id="password" name="password1"><br><br></td>
+				</tr>
+
+				<tr>
+                			<td><label>Mobile Number :</label></td>
+                			<td><input type="tel" name="phone"><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="gender">From :</label></td>
+					<td><select name="gen" id="gender">
+                    		<option value="" selected>select</option>
+					<option>Delhi</option>
+					<option>Mumbai</option>
+					<option>Bangalore</option>
+					<option>Chennai</option>
+					<option>Kolkata</option>
+					<option>Hyderabad</option>
+					<option>Kochi</option>
+					<option>Goa</option>
+					<option>Ahmedabad</option>
+					<option>Guwahati</option>
+				</select><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label>To :</label></td>
+					<td><select name="From" required>
+                    		<option value="" selected>select</option>
+					<option>Delhi</option>
+					<option>Mumbai</option>
+					<option>Bangalore</option>
+					<option>Chennai</option>
+					<option>Kolkata</option>
+					<option>Hyderabad</option>
+					<option>Kochi</option>
+					<option>Goa</option>
+					<option>Ahmedabad</option>
+					<option>Guwahati</option>
+				</select><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="departure">Departure Date & Time :&nbsp</label></td>
+                			<td><input type="datetime-local" id="departuretime" name="departuretime"><br><br></td>
+				</tr>
+
+				<tr>
+                			<td><label for="departure">Arrival Date & Time :&nbsp</label></td>
+                			<td><input type="datetime-local" id="departuretime" name="departuretime"><br><br></td>
+                		</tr>
+
+				<tr>
+                		<td><label for="">Class :</label></td>
+                		<td><input type="radio" id="radio1" name="radio" value="Male">&nbspFirst Class&nbsp&nbsp&nbsp
+                		<input type="radio" id="radio2" name="radio" value="Female">&nbspBusiness Class&nbsp&nbsp&nbsp
+				<input type="radio" id="radio2" name="radio" value="Other">&nbspEconomy<br><br></td>
+				</tr>
+				</table>
+
+				<input id="check" type="checkbox" name="c" value="checked"><label><style="text-decoration: none;">&nbsp&nbsp&nbsp&nbspI agree to terms and conditions</label><br><br><br>
+                		<input type="submit" required>
+            		
+				</center>
+        		</form>
+    		</div>
+	</div>
+		<div class="col-sm-2">
+		</div>
+		
+</div>
+</div>
+
+<div class="col-sm-3">
+	<button id="myButton" class="float-left submit-button" > Back to Home</button>
+
+</div>
+	<div class="col-sm-2">
+	</div>
+	<div class="col-sm-3">
+		<a href="exp.html"><img src="en.png"/></a>
+	</div>
+</div>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+			
