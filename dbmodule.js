@@ -4,35 +4,15 @@ var db = mongojs(databaseUrl);
 //var collections = db.collection("users");
 console.log("Connected");
 
-exports.authenticateUser = function(username, email, response) 
-{
-    console.log(username);
-    console.log(email);
-    db.users.find({ "username": username, "email": email },
-        function(err, op) {
-            
-            if (err || !op) {
-                response.write("..Not authorized user" || err);
-                response.end();
-            } else if (op.length == 0) {
-                response.write("Not authorized user");
-                response.end();
-            } else {
-                response.write("Authorized user");
-                response.end();
-            }
-
-        });
-}
-exports.saveUser = function(username, email, response) {
+exports.saveUser = function(user, email,pass,password1,phone,gen,from,departuretime,arrivaltime,radio, response) {
 console.log('Saving user to mongo');
-db.users.insert({ "username": username, "email": email },
+db.users.insert({ "username": user, "email": email,"password":pass,"confirm password":password1,"mobile number":phone,"From":gen,"To":from,"departure time":departuretime,"arrival time":arrivaltime,"class":radio },
 function(err, saved) 
 {
     if (err || !saved)
         console.log(err);
     else
-        response.write("User Saved");
+        response.write("Booked Successfully!!!!");
         response.end();
          });
 }

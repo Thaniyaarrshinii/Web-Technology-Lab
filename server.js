@@ -7,14 +7,28 @@ http.createServer(function(request, response) {
          
 	request.on('data', function(chunk) { data1 += chunk; });
         request.on('end', function() {
-            var name = querystring.parse(data1)["username"];
-            console.log(name);
+            var user = querystring.parse(data1)["user"];
+            console.log(user);
             var email = querystring.parse(data1)["email"];
             console.log(email);
-            if (request.url === '/login') {
-                module.authenticateUser(name, email, response);
-            } else if (request.url === '/save') {
-                module.saveUser(name, email, response);
+            var pass = querystring.parse(data1)["pass"];
+            console.log(pass);
+            var password1 = querystring.parse(data1)["password1"];
+            console.log(password1);
+            var phone = querystring.parse(data1)["phone"];
+            console.log(phone);
+            var gen = querystring.parse(data1)["gen"];
+            console.log(gen);
+            var from = querystring.parse(data1)["from"];
+            console.log(from);
+            var departuretime = querystring.parse(data1)["departuretime"];
+            console.log(departuretime);
+            var arrivaltime = querystring.parse(data1)["arrivaltime"];
+            console.log(arrivaltime);
+            var radio = querystring.parse(data1)["radio"];
+            console.log(radio);
+            if (request.url === '/save') {
+                module.saveUser(user, email,pass,password1,phone,gen,from,departuretime,arrivaltime,radio, response);
             } else {
                 console.log("In else");
             }

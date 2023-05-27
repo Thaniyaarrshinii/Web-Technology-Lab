@@ -1,0 +1,107 @@
+html,body{
+	height:100%;
+	width:100%;
+}
+.navbar{
+	background-color:black;
+	padding:1% 0;
+	font-size:1.2em;
+}
+.navbar-brand{
+	min-height:55px;
+	padding:0 15px 8px;
+}
+.navbar-default .navbar-nav li a{
+	color:#D5D5D5;
+}
+.navbar-default .navbar-nav li a:link{
+	color:white;
+	
+}
+.navbar-default .navbar-nav li a:visited{
+	color:white;
+}
+.navbar-default .navbar-nav li a:hover{
+	background-color:#E5E4E2;
+	color:black;
+}
+.navbar-default .navbar-nav li a:active{
+	background-color:#7393B3;
+}
+
+#home{
+	background:url(mountains.jpeg) no-repeat center center fixed;
+	display:table;
+	height:100%;
+	position:relative;
+	width:100%;
+	background-size:cover;
+}
+.landing-text{
+	display:table-cell;
+	text-align:center;	
+}
+.landing-text h1{
+	font-family:Showcard Gothic;
+	font-size:55px;
+	background-color:white;
+	border:25px solid black;
+	padding:30px;
+	margin:20px;
+	margin-top:60px;
+}
+.landing-text h3{
+	font-family: "Sofia", sans-serif;
+	color:black;
+	margin:40px;
+	margin-top:5px;
+	padding:5px;
+	font-size:50px;
+}
+.landing-text h4{
+	font-family: "Sofia", sans-serif;
+	color:black;
+	margin:40px;
+	margin-top:5px;
+	padding:5px;
+	font-size:25px;
+}
+.padding{
+	padding:80px 0;
+}
+.padding img{
+	width:100%;
+}
+#fixed{
+	background:url(a.jpg) no-repeat center center fixed;
+	display:table;
+	height:60%;
+	position:relative;
+	width:100%;
+	background-size:cover;
+}
+
+#form{
+	background:url(imageedit_1_2686022958.jpg) no-repeat center center fixed;
+	display:table;
+	height:100%;
+	position:relative;
+	width:100%;
+	background-size:cover;
+}
+
+    
+h2.ABT_{
+	font-family:Stencil;
+	font-size:50px;
+}	
+
+/*label {
+        display: inline-block;
+        width: 150px;
+      }*/
+
+form.B_{
+        background-color:black;
+       
+}
